@@ -163,7 +163,6 @@ img{
         </li>
     </ul>
 </div> <!--"sidebar" ends-->
-  </div> <!--"content-wrap" ends-->
 
 	<div class="footer">
         <div class="copyright">
@@ -172,12 +171,14 @@ img{
         </div>
     </div> <!--"footer" ends-->
 
-</div> <!--"page-wrap" ends-->
+  </div> <!--"content-wrap" ends-->
 
 <!-- assets starts -->
 <script src="./js/jquery.min1.js" type="text/javascript"></script>
 
 <link href="./css/js-image-slider.css" rel="stylesheet" type="text/css">
+<link href="./css/generic.css" rel="stylesheet" type="text/css">
+
 <script src="./js/js-image-slider.js" type="text/javascript"></script>
 
 <script src="./js/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
@@ -190,8 +191,22 @@ img{
         $('#scrollbar2').tinyscrollbar({ size: 310 });
 
     });
+	
 </script>
-
+<script type="text/javascript">
+    function switchAutoAdvance() {
+        imageSlider.switchAuto();
+        switchPlayPauseClass();
+    }
+    function switchPlayPauseClass() {
+        var auto = document.getElementById('auto');
+        var isAutoPlay = imageSlider.getAuto();
+		console.log(auto);
+        auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
+        auto.title = isAutoPlay ? "Pause" : "Play";
+    }
+    switchPlayPauseClass();
+</script>
 <!-- <script src="assets/js/sound/sound-mouseover.js" type="text/javascript"></script>
 <audio>
 <source src="assets/js/sound/click.mp3"></source>
