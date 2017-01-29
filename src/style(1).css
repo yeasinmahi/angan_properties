@@ -1,0 +1,37 @@
+/*
+Theme Name: Anjon Propertise
+Theme URI: http://anjonpropertise.com
+Description: A handrolled WordPress Twitter Bootstrap theme based on the tutorial at http://aan-nahl.com
+Version: 1.0
+Author:Sagir Ahmed
+Author URI:http://anjonpropertise.com
+Tags: responsive, white, bootstrap
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+
+Some other comments or urls here that will prove useful reminders to you or another developer
+*/
+.content-left.projects-area-projects{
+     width: 930px!important;
+}
+.image.image-projects {
+    width: 30%!important;
+}
+.span-projects{
+    font-size: 32px;
+    height: 70px!important;
+    left: 0;
+    padding: 6px 10px;
+    position: absolute;
+    top: 242px!important;
+    width: 247px!important;
+}
+
+.projects-eight-page{
+   width: 100%!important;
+}
+.projects-eight-details-inner-slider{
+    width: 65%!important;
+}
+.projects-eight-details-inner-info{
+    width: 26%!important;
+}
