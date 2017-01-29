@@ -1,6 +1,5 @@
 <?php
-$content = '<div class="main-content">
-      
+$content = '
       <div class="content-left">
         <h3>About Us</h3>
         <div class="content-details">
@@ -21,7 +20,6 @@ Since in establishment, the firm has experienced a series of success in its brie
                     <img src="http://anganpropertiesltd.com/wp-content/uploads/2017/01/about-us-1.jpg">
       </div>
 
-
-    </div>';
+';
 include('index.php');
 ?>

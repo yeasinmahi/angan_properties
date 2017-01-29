@@ -1,14 +1,15 @@
 <?php
 $content = '
-<div class="main-content">
-      
+
       <div class="content-left">
         <h3>Company Profile</h3>
         <div class="content-details">
           <div id="scrollbar2">
+
               <div class="scrollbar" style="height: 310px;"><div class="track" style="height: 310px;"><div class="thumb" style="top: 0px; height: 101.371px;"><div class="end"></div></div></div></div>
               <div class="viewport">
                   <div class="overview" style="top: 0px;">
+
                                         <p>ANGAN Properties Ltd. (A sister concern of SALMA GROUP) started its journey in 2008,Though The Group started its journey in 2000 and has since become one of the forerunners in Spinning Sector , earning a great reputation.<br><br>
 
 SALMA Group consists with SALMA TRADE INT. BSB Spinning Mills, DABIRUDDIN Spinning Mills, SURAIYA Spinning Mills, TAMIJ UDDIN Spinning Mills Ltd, MOSHIUR Traders, Crystal Bridge (Pvt.) Ltd. M/S. Bhuiyan Enterprise.<br><br>
@@ -63,9 +64,10 @@ We know that moment is an important stepping-stone for you, and hence we at ANGA
       <div class="content-right">
           
           <img src="http://anganpropertiesltd.com/wp-content/uploads/2017/01/company-profile.png">
-      </div>
+
 
 
     </div>';
-include('index.php');
+
+include('index.php')
 ?>

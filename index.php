@@ -92,10 +92,10 @@ img{
 	    <div class="logo"><a href="#" ><img src="./src/logo.png"></a></div>
 	</div> <!--"header" ends-->
   <div class="content-wrap">
-
+ 
     <div class="main-content">
         <div class="home-slider">
-            <?php echo $content; ?>
+           <?php echo $content; ?>
         </div>
      <!-- 
          
