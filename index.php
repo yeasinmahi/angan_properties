@@ -47,7 +47,10 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }
-
+img{
+    width: 100%;
+    height: auto;
+}
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
 <script type="text/javascript" src="./src/jquery.js.download"></script>
