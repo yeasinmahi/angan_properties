@@ -16,4 +16,10 @@ function execute($sql){
         $conn->close();
     return $isSuccess;
 }
+function getResult($sql){
+    require 'dbConnector.php';
+    $result = $conn->query($sql);
+    $conn->close();
+    return $result;
+}
 ?>

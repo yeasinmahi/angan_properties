@@ -1,4 +1,14 @@
 <?php
+session_start();
+function checkLogin(){
+    if(!isset($_SESSION["user"])) {
+		header("Location: index.php");
+	}
+}
+function logOut(){
+    session_unset();
+	session_destroy(); 
+}
 function getErrorMsg($id){
     $msg="";
     if($id==0){
