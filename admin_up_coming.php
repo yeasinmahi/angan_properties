@@ -1,4 +1,5 @@
 <?php
+require 'dbHelper.php';
 if (isset($_GET['id'])) {
         $id=$_GET['id'];
         $msg="";
@@ -13,9 +14,7 @@ if (isset($_GET['id'])) {
         }
         //echo $msg; 
     }
-require 'dbConnector.php';
-$sql = "SELECT * FROM `projects` WHERE status = 1 ";
-$result = $conn->query($sql);
+$result = getProjects(1);
 if ($result->num_rows > 0) {
     if (isset($msg)) {
         $content = $msg;
