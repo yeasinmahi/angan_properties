@@ -145,6 +145,9 @@ min-width: 200px !important;
 padding: 8px 24px;
 margin: 0px 0px;
 }
+.project-container{
+	background-color: #E6E6E6;
+}
 a.admin-menu:hover{
     background-color: #9B0F16;
     text-decoration: none !important;
@@ -191,11 +194,30 @@ table.project-table td a{
     border: 1px solid red;
 }
 .project-gallery img{
-    height:180px;
-    width:auto;/*maintain aspect ratio*/
-    max-width:500px;
+    height:200px;
+    width:200px;/*maintain aspect ratio*/
+    max-width:200px;
+}
+.project-gallery{
+	margin: 10px 0px 10px 10px;
+	position: relative;
+    display: inline-block;
+}
+.project-gallery span{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+	padding: 1% 5%;
+    margin-top: -1em;
+    margin-left: -50%;
+    width: 90%;
+    height: 2em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+}
 }
 .text-over-image { 
+float:left;
    position: relative; 
    width: 100%; /* for IE 6 */
 }
@@ -206,6 +228,111 @@ h2 {
    left: 0; 
    width: 100%; 
 }
+</style>
+<style>
+        #slides {
+      display: none
+    }
+
+    #slides .slidesjs-navigation {
+      margin-top:5px;
+    }
+
+    a.slidesjs-next,
+    a.slidesjs-previous,
+    a.slidesjs-play,
+    a.slidesjs-stop {
+      background-image: url(img/btns-next-prev.png);
+      background-repeat: no-repeat;
+      display:block;
+      width:12px;
+      height:18px;
+      overflow: hidden;
+      text-indent: -9999px;
+      float: left;
+      margin-right:5px;
+    }
+
+    a.slidesjs-next {
+      margin-right:10px;
+      background-position: -12px 0;
+    }
+
+    a:hover.slidesjs-next {
+      background-position: -12px -18px;
+    }
+
+    a.slidesjs-previous {
+      background-position: 0 0;
+    }
+
+    a:hover.slidesjs-previous {
+      background-position: 0 -18px;
+    }
+
+    a.slidesjs-play {
+      width:15px;
+      background-position: -25px 0;
+    }
+
+    a:hover.slidesjs-play {
+      background-position: -25px -18px;
+    }
+
+    a.slidesjs-stop {
+      width:18px;
+      background-position: -41px 0;
+    }
+
+    a:hover.slidesjs-stop {
+      background-position: -41px -18px;
+    }
+
+    .slidesjs-pagination {
+      margin: 7px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(img/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    #slides a:link,
+    #slides a:visited {
+      color: #333
+    }
+
+    #slides a:hover,
+    #slides a:active {
+      color: #9e2020
+    }
+
+    .navbar {
+      overflow: hidden
+    }
+
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
 <script type="text/javascript" src="./src/jquery.js.download"></script>
@@ -347,6 +474,7 @@ h2 {
 <script src="./js/js-image-slider.js" type="text/javascript"></script>
 
 <script src="./js/jquery.tinyscrollbar.min.js" type="text/javascript"></script>
+  <script src="js/jquery.slides.min.js"></script>
 
 <script type="text/javascript">
     $(document).ready(function(){
@@ -354,6 +482,7 @@ h2 {
         // $('#scrollbar1').tinyscrollbar();
         // $('#scrollbar1').tinyscrollbar({ size: 165 });
         $('#scrollbar2').tinyscrollbar({ size: 310 });
+		 
 
     });
 	
@@ -378,5 +507,23 @@ h2 {
 <source src="assets/js/sound/click.ogg"></source>
 </audio>
 <div id="sounddiv"><bgsound id="sound"></div> -->
+</body>
+<footer>
+<script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
 
-</body></html>
+
+</footer>
+</html>

@@ -4,13 +4,16 @@ $sql = "SELECT * FROM `projects` as p join image as i on p.id = i.pid where stat
 $result = $conn->query($sql);
 $content = '';
 if ($result->num_rows > 0) { 
-    while($row = $result->fetch_assoc()) {
-        $content .= '<a href="#" class="project-gallery">
-		<img  src="/angan/'.$row["image"].'"/>'.$row["location"].'
+$content = '<div style="text-align:right;color:rgb(181,15,25);font-weight: 600;
+    font-size: 35px;">Upcoming Projects</div><div class="project-container">';
+  while($row = $result->fetch_assoc()) {
+        $content .= '<a href="/angan/upcomings.php?id='.$row["pid"].'" class="project-gallery">
+		<img  src="/angan/'.$row["image"].'"/><span>'.$row["projectName"].' <br> @'.$row["location"].'</span>
 		</a>
 		
         ';
     }
+	$content .= '</div>';
 } 
 
 include('index.php');
