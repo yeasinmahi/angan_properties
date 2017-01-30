@@ -6,5 +6,14 @@ function getProjects($type){
     $conn->close();
     return $result;
 }
-
+function execute($sql){
+    require 'dbConnector.php';
+    if ($conn->query($sql) === TRUE) {
+            $isSuccess=1;
+        } else {
+            $isSuccess=2;
+        }
+        $conn->close();
+    return $isSuccess;
+}
 ?>
