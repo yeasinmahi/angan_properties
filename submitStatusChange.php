@@ -1,22 +1,17 @@
 <?php
 $isSuccess=0;
-if (isset($_GET['id'])&& isset($_GET['type'])) {
+if (isset($_GET['id']) && isset($_GET['type'])) {
     require 'dbHelper.php';
     $id = $_GET['id'];
     $type = $_GET['type'];
+    $type2 = $type+1;
     $sql = "";
-    if($type==1 ){
-        $sql = "UPDATE `projects` SET `status`=2 where id = ".$id." ";
-        $isSuccess=execute($sql);
-        header("Location: adminProjects.php?id=".$isSuccess."& type=".$type);
-    }
-    elseif($type==2 ){
-        $sql = "UPDATE `projects` SET `status`=3 where id = ".$id." ";
+    if($type==1 || $type==2){
+        $sql = "UPDATE `projects` SET `status`=".$type2." where id = ".$id;
         $isSuccess=execute($sql);
         header("Location: adminProjects.php?id=".$isSuccess."& type=".$type);
     }
     else{
-        $conn->close();
         header("Location: home.php");
     }
 }
