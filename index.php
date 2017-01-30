@@ -142,7 +142,7 @@ font-weight: bold;
 font-family: 'Exo 2', Verdana, Geneva, sans-serif;
 font-size: 18px;
 min-width: 200px !important;
-padding: 8px;
+padding: 8px 24px;
 margin: 0px 0px;
 }
 a.admin-menu:hover{
@@ -176,6 +176,8 @@ table.project-table tr:hover {
 	background-color:#eee;
 }
 table.project-table td {
+    min-width: 100px;
+    max-width: 150px;
 	border-width: 1px;
 	padding: 10px;
 	border-style: solid;
@@ -188,8 +190,8 @@ table.project-table td a{
     padding: 3px;
     border: 1px solid red;
 }
-img{
-    width: 100%;
+.project-gallery{
+    max-width: 100px !important;
     height: auto;
 }
 </style>
