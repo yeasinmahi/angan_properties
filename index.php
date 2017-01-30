@@ -149,6 +149,45 @@ a.admin-menu:hover{
     background-color: #9B0F16;
     text-decoration: none !important;
 }
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+<style type="text/css">
+table.project-table {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+    width: 100%;
+	border-collapse: collapse;
+}
+table.project-table th {
+	background-color:#ddd;
+	border-width: 1px;
+	padding: 8px;
+    min-width: 100px;
+    max-width: 150px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.project-table tr {
+	background-color:#fff;
+}
+table.project-table tr:hover {
+	background-color:#eee;
+}
+table.project-table td {
+	border-width: 1px;
+	padding: 10px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.project-table td a{
+	background-color: #fff;
+    color: #333;
+    font-weight: bold;
+    padding: 3px;
+    border: 1px solid red;
+}
 img{
     width: 100%;
     height: auto;

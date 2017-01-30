@@ -11,14 +11,18 @@ if (isset($_GET['id'])) {
         }else{
             $msg="Unknows Error";
         }
-        echo $msg; 
+        //echo $msg; 
     }
 require 'dbConnector.php';
 $sql = "SELECT * FROM `projects` WHERE status = 1 ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
-    echo '<form action="submitStatusChange.php" method="post">
-    <table>
+    if (isset($msg)) {
+        $content = $msg;
+    }
+    else $content = "";
+    $content .= '
+    <table class="project-table">
     <tr>
         <th>Project Name</th>
         <th>Location</th>
@@ -28,18 +32,19 @@ if ($result->num_rows > 0) {
     </tr>';
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo '<tr>
+        $content .= '<tr >
             <td>'.$row["projectName"].'</td>
             <td>'.$row["location"].'</td>
             <td>'.$row["details"].'</td>
-            <td>Up Coming </td>
-            <td><a href="submitStatusChange.php?id='.$row["id"].'" class="btn btn-default">Submit</a></td>
+            <td>Upcoming Project</td>
+            <td>Project Ongoing? <a href="submitStatusChange.php?id='.$row["id"].'" class="btn btn-default">Yes</a></td>
         </tr>';
     }
 } else {
-    echo "0 results";
+    $content = "0 results";
 }
-echo '</table>';
+$content .= '</table>';
+include("index.php");
 $conn->close();
 
 ?>
