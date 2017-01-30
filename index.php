@@ -190,9 +190,21 @@ table.project-table td a{
     padding: 3px;
     border: 1px solid red;
 }
-.project-gallery{
-    max-width: 100px !important;
-    height: auto;
+.project-gallery img{
+    height:180px;
+    width:auto;/*maintain aspect ratio*/
+    max-width:500px;
+}
+.text-over-image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
 }
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
