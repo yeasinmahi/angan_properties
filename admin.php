@@ -5,7 +5,7 @@
     </div>
     <div class="form-group">
       <label for="email">Upload Image</label>
-      <input type="file" class="form-control" id="image" name="image[]" multiple>
+      <input type="file" class="form-control" id="image" name="image[]" multiple accept="image/x-png,image/gif,image/jpeg">
     </div>
     <div class="form-group">
       <label for="email">Location</label>
@@ -15,6 +15,5 @@
       <label for="email">Details:</label>
       <textarea type="text" class="form-control" id="details" name="details"></textarea>
     </div>
-    
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
