@@ -1,8 +1,8 @@
 <?php
 
-$servername = "103.203.95.42:3306";
-$username = "angan";
-$password = "1234";
+$servername = "localhost:3306";
+$username = "root";
+$password = "";
 $dbname = "angandb";
 
 // Create connection

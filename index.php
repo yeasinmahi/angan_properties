@@ -255,7 +255,8 @@ h2 {
                $admin = '<div class="admin"><a class="admin-menu" href="/angan/admin.php">New Project</a>
                          <a class="admin-menu" href="/angan/adminProjects.php?type=1">Upcoming Projects</a>
                          <a class="admin-menu" href="/angan/adminProjects.php?type=2">Ongoing Projects</a>
-                         <a class="admin-menu" href="/angan/adminProjects.php?type=3">Completed Projects</a></div>';
+                         <a class="admin-menu" href="/angan/adminProjects.php?type=3">Completed Projects</a></div>
+                         <a class="admin-menu" href="/angan/logout.php">logout</a></div>';
                if(strpos($_SERVER['REQUEST_URI'],'admin')){
                     echo $admin;
                }

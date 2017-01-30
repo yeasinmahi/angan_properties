@@ -1,4 +1,6 @@
 <?php
+require 'utility.php';
+checkLogin();
 if (isset($_GET['id'])) {
         $id=$_GET['id'];
         $msg="";
