@@ -1,4 +1,5 @@
-<form action="submitProject.php" method="post" enctype="multipart/form-data">
+<?php
+   $content = '<form action="submitProject.php" method="post" enctype="multipart/form-data">
     <div class="form-group">
       <label for="email">Project Name:</label>
       <input type="text" class="form-control" id="projectName" name="projectName" placeholder="Project Name">
@@ -17,3 +18,8 @@
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
   </form>
+';
+   include('index.php');
+
+
+  ?>
