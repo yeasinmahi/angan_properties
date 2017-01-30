@@ -1,5 +1,23 @@
 <?php
-   $content = '<form action="submitProject.php" method="post" enctype="multipart/form-data">
+if (isset($_GET['id'])) {
+        $id=$_GET['id'];
+        $msg="";
+        if($id==0){
+            $msg="nothing";
+        }elseif($id==1){
+            $msg="Success";
+        }elseif($id==2){
+            $msg="Failed";
+        }else{
+            $msg="Unknows Error";
+        }
+        //echo $msg; 
+    }
+    if (isset($msg)) {
+        $content = $msg;
+    }
+    else $content = "";
+   $content .= '<form action="submitProject.php" method="post" enctype="multipart/form-data">
    <ul class="form-style-1">
     <li>
       <label for="email"><span class="required">*</span>Project Name:</label>

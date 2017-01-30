@@ -4,7 +4,8 @@ require 'dbConnector.php';
 $projectName = $_POST["projectName"];
 $location = $_POST["location"];
 $details = $_POST["details"];
-	
+$isSuccess=0;
+
 $sql = "INSERT INTO `projects`(`projectName`, `location`,  `details`) VALUES 
 ('".$projectName."','".$location."','".$details."');";
 $pid=0;
@@ -13,17 +14,16 @@ if ($conn->query($sql) === TRUE) {
     if($pid>0){
         $isUpload = imageUpload($pid);
         if($isUpload===TRUE){
-            echo "success";
+            $isSuccess=1;
         }else{
-            echo "insert fail";
+            $isSuccess=2;
         }
     }
-	
-    
 } else {
-    echo "fail";
+    $isSuccess=3;
 }
 $conn->close();
+header("Location: admin.php?id=".$isSuccess);
 
 function imageUpload($pid) {
     

@@ -14,7 +14,7 @@ if (isset($_GET['id'])) {
         //echo $msg; 
     }
 require 'dbConnector.php';
-$sql = "SELECT * FROM `projects` WHERE status = 1 ";
+$sql = "SELECT * FROM `projects` WHERE status = 2 ";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     if (isset($msg)) {
@@ -36,8 +36,8 @@ if ($result->num_rows > 0) {
             <td>'.$row["projectName"].'</td>
             <td>'.$row["location"].'</td>
             <td>'.$row["details"].'</td>
-            <td>Ongoing Project</td>
-            <td>Project Ongoing? <a href="submitStatusChange.php?id='.$row["id"].'" class="btn btn-default">Yes</a></td>
+            <td>Upcoming Project</td>
+            <td>Project Completed? <a href="submitStatusChangeOnGoing.php?id='.$row["id"].'" class="btn btn-default">Yes</a></td>
         </tr>';
     }
 } else {
