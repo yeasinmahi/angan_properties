@@ -142,7 +142,7 @@ font-weight: bold;
 font-family: 'Exo 2', Verdana, Geneva, sans-serif;
 font-size: 18px;
 min-width: 200px !important;
-padding: 8px 24px;
+padding: 8px 22px;
 margin: 0px 0px;
 }
 .project-container{
@@ -180,7 +180,7 @@ table.project-table tr:hover {
 }
 table.project-table td {
     min-width: 100px;
-    max-width: 150px;
+    max-width: 200px;
 	border-width: 1px;
 	padding: 10px;
 	border-style: solid;
@@ -382,7 +382,7 @@ h2 {
                $admin = '<div class="admin"><a class="admin-menu" href="/angan/admin.php">New Project</a>
                          <a class="admin-menu" href="/angan/adminProjects.php?type=1">Upcoming Projects</a>
                          <a class="admin-menu" href="/angan/adminProjects.php?type=2">Ongoing Projects</a>
-                         <a class="admin-menu" href="/angan/adminProjects.php?type=3">Completed Projects</a></div>
+                         <a class="admin-menu" href="/angan/adminProjects.php?type=3">Completed Projects</a>
                          <a class="admin-menu" href="/angan/logout.php">logout</a></div>';
                if(strpos($_SERVER['REQUEST_URI'],'admin')){
                     echo $admin;
