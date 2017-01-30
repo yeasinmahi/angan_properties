@@ -37,7 +37,7 @@ if ($result->num_rows > 0) {
             <td>'.$row["location"].'</td>
             <td>'.$row["details"].'</td>
             <td>Upcoming Project</td>
-            <td>Project Ongoing? <a href="submitStatusChangeOnGoing.php?id='.$row["id"].'" class="btn btn-default">Yes</a></td>
+            <td>Project Completed? <a href="submitStatusChangeOnGoing.php?id='.$row["id"].'" class="btn btn-default">Yes</a></td>
         </tr>';
     }
 } else {
