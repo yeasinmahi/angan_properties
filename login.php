@@ -89,7 +89,9 @@ $content = '<style>
 <div class="account-wall">
        
                 <form class="form-signin" action="submitLogin.php" method="post">
+                <label for="userName" class="form-control">User Name</label>
                 <input type="text" class="form-control"  name="userName" placeholder="User Name" required="" autofocus="">
+                <label for="password" class="form-control">Password</label>
                 <input type="password" class="form-control" name="password" placeholder="Password" required="">
                 <button class="btn btn-lg btn-primary btn-block" name="save" type="submit">
                     Sign in</button>
