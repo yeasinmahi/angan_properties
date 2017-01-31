@@ -20,7 +20,7 @@ $content = '
               </tr>
               <tr>
                 <td>E-mail:</td>
-                <td><input name="email" type="text"></td>
+                <td><input name="email" type="email"></td>
               </tr>
               <tr>
                 <td>Phone:</td>
