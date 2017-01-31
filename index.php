@@ -10,7 +10,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href="./src/css" rel="stylesheet" type="text/css">
+		<!--<link href="./src/css" rel="stylesheet" type="text/css">-->
 		<link href="./src/style.css" rel="stylesheet" type="text/css" media="screen">
 				                        <script src="./src/webfont.js.download" type="text/javascript" async=""></script><script>
                             /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
@@ -350,14 +350,15 @@ body{
 }
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
-<script type="text/javascript" src="./src/jquery.js.download"></script>
-<script type="text/javascript" src="./src/jquery-migrate.min.js.download"></script>
+<!--<script type="text/javascript" src="./src/jquery.js.download"></script>-->
+<!--<script type="text/javascript" src="./src/jquery-migrate.min.js.download"></script>-->
 <link rel="https://api.w.org/" href="http://anganpropertiesltd.com/wp-json/">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://anganpropertiesltd.com/xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://anganpropertiesltd.com/wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 4.7.2">
 		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		<link rel="stylesheet" href="./src/css(1)"><style type="text/css" title="dynamic-css" class="options-output">h2.site-description, .entry-title{font-family:Abel;line-height:40px;font-weight:400;font-style:normal;color:#333;font-size:33px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h2.site-description, .entry-title,{opacity: 0;}.ie.wf-loading h2.site-description, .entry-title,{visibility: hidden;}</style></head>
+		<!--<link rel="stylesheet" href="./src/css(1)">-->
+        <style type="text/css" title="dynamic-css" class="options-output">h2.site-description, .entry-title{font-family:Abel;line-height:40px;font-weight:400;font-style:normal;color:#333;font-size:33px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h2.site-description, .entry-title,{opacity: 0;}.ie.wf-loading h2.site-description, .entry-title,{visibility: hidden;}</style></head>
 <body>
 
 	<!--[if lt IE 9]>
@@ -410,13 +411,12 @@ body{
 <div id="sliderFrame">
               <div id="slider" style="background: url(&quot;http://anganpropertiesltd.com/wp-content/themes/anjon-properties/assets/images/slides/home-2.jpg&quot;) no-repeat;">
 
-                <a href="#" class="imgLink" style="display: none;"><img src="./src/home-1.jpg" alt="" style="display: none;"></a>
-                <a href="#" class="imgLink" style="display: block;"><img src="./src/home-2.jpg" alt="" style="display: none;"></a>
-                <a href="#" class="imgLink" style="display: none;"><img src="./src/home-3.jpg" alt="" style="display: none;"></a>
-                <a href="#" class="imgLink" style="display: none;"><img src="./src/home-4.jpg" alt="" style="display: none;"></a>
-
-              <div class="mc-caption-bg" style="opacity: 0; visibility: hidden;"><div class="mc-caption" style="visibility: hidden; width: 0px;"></div></div><div class="mc-caption-bg2" style="opacity: 0; visibility: hidden;"><div class="mc-caption" style="width: 0px;"></div></div><div class="navBulletsWrapper"><div rel="0" class=""></div><div rel="1" class="active"></div><div rel="2" class=""></div><div rel="3" class=""></div></div><div class="mcSlc" style="left: 0px; width: 880px; height: 444px; background: url(&quot;http://anganpropertiesltd.com/wp-content/themes/anjon-properties/assets/images/slides/home-2.jpg&quot;) 0px 0% no-repeat; z-index: 1; position: absolute; opacity: 1; top: 0px;"></div></div>
-
+                <img src="./src/home-1.jpg" alt="">
+                <img src="./src/home-2.jpg" alt="">
+                <img src="./src/home-3.jpg" alt="">
+                <img src="./src/home-4.jpg" alt="">
+</div>
+              
               <!--Custom navigation buttons on both sides-->
               <div class="group1-Wrapper">
                   <a onclick="imageSlider.previous()" class="group1-Prev"></a>
@@ -503,18 +503,7 @@ body{
 	
 </script>
 <script type="text/javascript">
-    function switchAutoAdvance() {
-        imageSlider.switchAuto();
-        switchPlayPauseClass();
-    }
-    function switchPlayPauseClass() {
-        var auto = document.getElementById('auto');
-        var isAutoPlay = imageSlider.getAuto();
-		console.log(auto);
-        auto.className = isAutoPlay ? "group2-Pause" : "group2-Play";
-        auto.title = isAutoPlay ? "Pause" : "Play";
-    }
-    switchPlayPauseClass();
+    
 </script>
 <!-- <script src="assets/js/sound/sound-mouseover.js" type="text/javascript"></script>
 <audio>

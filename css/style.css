@@ -107,7 +107,6 @@ Use width:100% and height:auto to make the embedded videos flexible-----
 /*---Header Starts---*/
 .header {
 	height: 182px;
-	background-image: url(../images/header-bg.png);
 	background-repeat: no-repeat;
 	background-position: bottom left;
 	margin-bottom: 14px;
