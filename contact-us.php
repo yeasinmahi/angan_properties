@@ -29,7 +29,7 @@ HOTLINE: +8801755553368, +8801755553369<br></p>
         <div class="content-details content-details-bottom">
                     <p>For a tailored response from our marketing team please select one of the following categories:<br></p>
           <!--<p>For a tailored response from our marketing team please select one of the following categories:</p>-->
-          <a href="http://anganpropertiesltd.com/enquiry-owner/">Land Owner</a> <a href="http://anganpropertiesltd.com/enquiry-buyer/">Buyer</a>
+          <a href="enquiry-owner.php">Land Owner</a> <a href="enquiry-buyer.php">Buyer</a>
         </div>
       </div>
 
