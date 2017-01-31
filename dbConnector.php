@@ -5,7 +5,6 @@ $username = "angan";
 $password = "1234";
 $dbname = "angandb";
 
-
 // $servername = "localhost";
 // $username = "root";
 // $password = "";
