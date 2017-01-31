@@ -328,11 +328,20 @@ h2 {
     #slides a:active {
       color: #9e2020
     }
+    .projects-back{
+        background-color: #111;
+    }
+    #slides{
+        height: 450px;
+        width: 600px;
+    }
 
     .navbar {
       overflow: hidden
     }
-
+body{
+    font-family: 'Exo 2', Verdana, Geneva, sans-serif;
+}
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
 <script type="text/javascript" src="./src/jquery.js.download"></script>
@@ -513,8 +522,8 @@ h2 {
 <script>
     $(function() {
       $('#slides').slidesjs({
-        width: 940,
-        height: 528,
+        width: 600,
+        height: 400,
         play: {
           active: true,
           auto: true,
