@@ -1,4 +1,4 @@
-<?
+<?php
 /* Edit these preferences to suit your needs */
 
   $mailto = 'info@anganpropertiesltd.com'; // insert the email address you want the form sent to
@@ -15,8 +15,14 @@
   $landaddress = $_POST['landaddress'];
   $size = $_POST['size'];
   $features = $_POST['features'];
-  $residential = $_POST['residential'];
-  $commercial = $_POST['commercial'];
+  $residential ="";
+  if(isset($_POST['residential'])){
+    $residential = $_POST['residential'];
+  }
+   $commercial="";
+  if(isset($_POST['commercial'])){
+    $commercial = $_POST['commercial'];
+  }
   
   if (!$name) {
     print("<strong>Error:</strong> Please write your name<br/><br/><a href='javascript:history.go(-1)'>Back</a>");
@@ -26,12 +32,6 @@
     print("<strong>Error:</strong> Please provide your email address<br/><br/><a href='javascript:history.go(-1)'>Back</a>");
      exit;
   }
-  if (!eregi("^[a-z0-9]+([-_\.]?[a-z0-9])+@[a-z0-9]+([-_\.]?[a-z0-9])+\.[a-z]{2,4}", $email)){
-    print("<strong>Error:</strong> this email address is not in a valid format.<br/><br/><a href='javascript:history.go(-1)'>Back</a>");
-     exit;
-    }
-    
-  
   $message = "
   Land Owner: $name sent a enquiry! Contact details are as follows:\n\n
   Landowner's Name: $name\n

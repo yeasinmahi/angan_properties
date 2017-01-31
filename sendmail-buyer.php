@@ -1,7 +1,7 @@
 <?php
 /* Edit these preferences to suit your needs */
 
-	$mailto = 'yeasinmahi72@gmail.com'; // insert the email address you want the form sent to
+	$mailto = 'info@anganpropertiesltd.com'; // insert the email address you want the form sent to
 	$returnpage = 'http://www.anganpropertiesltd.com/thankyou.php'; // insert the name of the page/location you want the user to be returned to
 	$sitename = '[Angan Properties LTD]'; // insert the site name here, it will appear in the subject of your email
 
@@ -47,6 +47,6 @@
   Remarks: $remarks\n\n";
 
   mail($mailto, "$sitename Contacted by $name", $message, "From: $email");
-  //header("Location: " . $returnpage);
+  header("Location: " . $returnpage);
 
 ?>
