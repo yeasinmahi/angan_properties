@@ -1,6 +1,5 @@
 <?php
 session_start();
-$isSuccess=0;
 if (isset($_POST['save'])) {
     require 'dbHelper.php';
     $userName = $_POST['userName'];
