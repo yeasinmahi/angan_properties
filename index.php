@@ -339,6 +339,12 @@ h2 {
     .navbar {
       overflow: hidden
     }
+    .slidesjs-slide
+    {
+        margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+    }
 body{
     font-family: 'Exo 2', Verdana, Geneva, sans-serif;
 }
@@ -479,7 +485,6 @@ body{
 <script src="./js/jquery.min1.js" type="text/javascript"></script>
 
 <link href="./css/js-image-slider.css" rel="stylesheet" type="text/css">
-<link href="./css/generic.css" rel="stylesheet" type="text/css">
 
 <script src="./js/js-image-slider.js" type="text/javascript"></script>
 
