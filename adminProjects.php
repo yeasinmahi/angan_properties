@@ -1,6 +1,7 @@
 <?php
 require 'dbHelper.php';
 require 'utility.php';
+checkLogin();
 if (isset($_GET['type'])) {
         $type=$_GET['type'];   
 }else{
