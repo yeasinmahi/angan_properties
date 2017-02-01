@@ -332,19 +332,21 @@ h2 {
         background-color: #111;
     }
     #slides{
-        height: 400px;
+        height: 380px;
         width: 600px;
     }
-
+    div.slidesjs-control img{
+        width:auto;
+        height:auto;
+    }
+    #slides img{
+        margin: auto;
+        display: block;
+    }
     .navbar {
       overflow: hidden
     }
-    .slidesjs-slide
-    {
-        margin-left: auto;
-	    margin-right: auto;
-	    display: block;
-    }
+    
 body{
     font-family: 'Exo 2', Verdana, Geneva, sans-serif;
 }
@@ -541,8 +543,6 @@ if it's not present, don't show loader */
 <script>
     $(function() {
       $('#slides').slidesjs({
-        width: 600,
-        height: 400,
         play: {
           active: true,
           auto: true,
