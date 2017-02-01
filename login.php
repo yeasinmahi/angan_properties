@@ -11,8 +11,8 @@ $content = '<style>
 
      .form-signin
 {
-    max-width: 330px;
-    padding: 15px;
+    max-width: 200px;
+    padding: 70px;
     margin: 0 auto;
 }
 .form-signin .form-signin-heading, .form-signin .checkbox
@@ -51,12 +51,12 @@ $content = '<style>
 }
 .account-wall
 {
-    margin-top: 20px;
     padding: 40px 0px 20px 0px;
     background-color:#eee;
     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    min-height: 382px;
 }
 .login-title
 {

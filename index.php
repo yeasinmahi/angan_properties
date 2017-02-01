@@ -140,7 +140,7 @@ a.admin-menu{
 color: #fff !important;
 font-weight: bold;
 font-family: 'Exo 2', Verdana, Geneva, sans-serif;
-font-size: 18px;
+font-size: 15px;
 min-width: 200px !important;
 padding: 8px 22px;
 margin: 0px 0px;
