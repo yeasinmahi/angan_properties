@@ -332,7 +332,7 @@ h2 {
         background-color: #111;
     }
     #slides{
-        height: 450px;
+        height: 400px;
         width: 600px;
     }
 
@@ -533,7 +533,7 @@ if it's not present, don't show loader */
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(/angan/images/loader-128x/Preloader_2.gif) center no-repeat #fff;
+	background: url(/angan/images/loader-128x/Preloader_10.gif) center no-repeat #fff;
 }
 </style>
 
