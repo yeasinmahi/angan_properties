@@ -346,9 +346,31 @@ h2 {
     .navbar {
       overflow: hidden
     }
-    
+    footer{
+        position: fixed;
+            right: 0;
+            height: 18px;
+            bottom: 0;
+            left: 0;
+            font-family: Calibri;
+            font-size: 14px;
+            color: black;
+            background-color: rgba(222, 222, 222, 0.2);
+    }
+    .xxx{
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+        border: 2px solid;
+        padding: 3px;
+            color:white !important;
+            background-color:black;
+    }
+    img{
+        horizontal-align: middle;
+    }
 body{
-    font-family: 'Exo 2', Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-family: calibri;
 }
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
@@ -362,7 +384,6 @@ body{
 		<!--<link rel="stylesheet" href="./src/css(1)">-->
         <style type="text/css" title="dynamic-css" class="options-output">h2.site-description, .entry-title{font-family:Abel;line-height:40px;font-weight:400;font-style:normal;color:#333;font-size:33px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h2.site-description, .entry-title,{opacity: 0;}.ie.wf-loading h2.site-description, .entry-title,{visibility: hidden;}</style></head>
 <body>
-
 	<!--[if lt IE 9]>
 	<style type="text/css">
 		body {
@@ -513,6 +534,7 @@ body{
 <source src="assets/js/sound/click.ogg"></source>
 </audio>
 <div id="sounddiv"><bgsound id="sound"></div> -->
+
 </body>
 <div class="se-pre-con"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -552,6 +574,7 @@ if it's not present, don't show loader */
       });
     });
   </script>
+<a href="login.php" class="xxx">Admin</a>
 
 
 </footer>

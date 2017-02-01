@@ -5,6 +5,7 @@ function checkLogin(){
 		header("Location: index.php");
 	}
 }
+
 function logOut(){
     session_unset();
 	session_destroy(); 

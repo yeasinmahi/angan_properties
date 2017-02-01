@@ -12,7 +12,7 @@ if ($result->num_rows > 0) {
 			$content .= '<div style="text-align:right;margin-bottom: 10px; font-weight:600; font-size: 35px;color:rgb(181,15,25);">'.$row["projectName"].'</div><div class="projects-back"><div style="width:550px; height:380px;float: left;overflow: hidden;display: block;padding: 10px;background-color: #000;" >';
 			$content .= '<img  src="/angan/'.$row["image"].'" alt="" style="margin:auto;display:block">';
 			$text = str_replace("\n", '<br />', $row["details"]);
-			$content .= '</div><div style="float:right;max-width:250px;height:380px;background-color:#e6e6e6;padding:10px;"><div style="font-size: 25px;text-align:center;margin-bottom: 10px;">'.$row["projectName"].'</div>'.$text.'</div></div>';
+			$content .= '</div><div style="float:right;max-width:250px;height:380px;background-color:rgba(22,11,66,0.1);padding:10px;"><div style="font-size: 25px;text-align:center;margin-bottom: 10px;">'.$row["projectName"].'</div>'.$text.'</div></div>';
 		}
 		else{
 		if($rowN ==1){
@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
 		if($rowN==$row_cnt)
 		{
 			$text = str_replace("\n", '<br />', $row["details"]);
-			$content .= '</div><div style="float:right;max-width:230px;height:380px;background-color:#e6e6e6;padding:10px;"><div style="font-size: 25px;text-align:center;margin-bottom: 10px;">'.$row["projectName"].'</div>'.$text.'</div></div>';
+			$content .= '</div><div style="float:right;max-width:230px;height:380px;background-color:rgba(22,11,66,0.1);padding:10px;"><div style="font-size: 25px;text-align:center;margin-bottom: 10px;">'.$row["projectName"].'</div>'.$text.'</div></div>';
 		}
 		++$rowN;
 		}

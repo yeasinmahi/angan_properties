@@ -1,9 +1,7 @@
 <?php
-if(isset($_GET["id"])){
-	$id = $_GET["id"];
-	if($id==1){
-		echo "Invalid username or password";
-	}
+session_start();
+if(isset($_SESSION["user"])) {
+		header("Location: admin.php");
 }
 ?>
 <?php
@@ -64,6 +62,7 @@ $content = '<style>
     font-size: 18px;
     font-weight: 400;
     display: block;
+    margin-bottom:5px !important;
 }
 .profile-img
 {
@@ -84,16 +83,35 @@ $content = '<style>
     display: block;
     margin-top: 10px;
 }
-  
+.labels{
+    font-size:16px;
+    margin-bottom: 10px;
+}
+.btn-primary{
+    background-color: #4CAF50; /* Green */
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    }
+    .btn-primary:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50; /* Green */
+}
 </style>
 <div class="account-wall">
-       
                 <form class="form-signin" action="submitLogin.php" method="post">
-                <label for="userName" class="form-control">User Name</label>
+                      
+
+                <label for="userName" class="login-title">User Name</label>
                 <input type="text" class="form-control"  name="userName" placeholder="User Name" required="" autofocus="">
-                <label for="password" class="form-control">Password</label>
+                <label for="password"  class="login-title">Password</label>
                 <input type="password" class="form-control" name="password" placeholder="Password" required="">
-                <button class="btn btn-lg btn-primary btn-block" name="save" type="submit">
+                <button class="btn-primary" name="save" type="submit">
                     Sign in</button>
                 </form>
             </div>';
