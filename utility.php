@@ -31,8 +31,9 @@ function getTableHead($type){
         <th>Project Status</th>";
 
     if($type==1 || $type==2){
-        $content .="<th>Action</th>";
+        $content .="<th>Action</th><th></th>";
     }elseif($type==3){
+        $content .="<th></th>";
     }
     else{
         return '';
@@ -59,6 +60,8 @@ function getContent($row,$type){
     else{
         return '';
     }
+    $content .= '<td><a href ="edit.php?id='.$row["id"].'&type='.$type.'" class="btn btn-default">Edit</a>
+        <a href ="delete.php?id='.$row["id"].'&type='.$type.'" class="btn btn-default">Delete</a></td>';
      $content .="</tr>";
     return $content;
 }
