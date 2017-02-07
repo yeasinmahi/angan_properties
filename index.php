@@ -575,6 +575,7 @@ if it's not present, don't show loader */
     });
   </script>
 <a href="login.php" class="xxx"style="float:left;margin-top:32px;">Admin</a>
+<a href="webmail" class="xxx"style="float:left;margin-top:32px;">WebMail</a>
 
         
         	<a style="float:right;" href="http://www.gits-bd.com/" target="_blank"><img src="./src/gits-bd.png"></a>
