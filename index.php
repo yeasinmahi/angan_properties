@@ -349,7 +349,7 @@ h2 {
     footer{
         position: fixed;
             right: 0;
-            height: 18px;
+            height: 50px;
             bottom: 0;
             left: 0;
             font-family: Calibri;
@@ -363,7 +363,7 @@ h2 {
         border: 2px solid;
         padding: 3px;
             color:white !important;
-            background-color:black;
+            background-color:#888;
     }
     img{
         horizontal-align: middle;
@@ -371,6 +371,7 @@ h2 {
 body{
     font-size: 14px;
     font-family: calibri;
+	margin-bottom:50px;
 }
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
@@ -494,13 +495,12 @@ body{
         </li>
     </ul>
 </div> <!--"sidebar" ends-->
-
-	<div class="footer">
-        <div class="copyright">
-        	<div class="text">Copyright ©Angan Properties Limited</div>
-        	<a href="http://www.gits-bd.com/" target="_blank" onmouseover="playclip();"><img src="./src/gits-bd.png"></a>
-        </div>
-    </div> <!--"footer" ends-->
+<style>
+.footer{
+	position:fixed;
+}
+</style>
+	 <!--"footer" ends-->
 
   </div> <!--"content-wrap" ends-->
 
@@ -574,8 +574,10 @@ if it's not present, don't show loader */
       });
     });
   </script>
-<a href="login.php" class="xxx">Admin</a>
+<a href="login.php" class="xxx"style="float:left;margin-top:32px;">Admin</a>
 
-
+        
+        	<a style="float:right;" href="http://www.gits-bd.com/" target="_blank"><img src="./src/gits-bd.png"></a>
+			<span style="float:right; padding-top:20px; padding-right:20px">©Angan Properties Limited</span>
 </footer>
 </html>
