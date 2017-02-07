@@ -49,10 +49,10 @@ function getContent($row,$type){
         
     if($type==1){
         $content .='<td>Upcomming Project</td>
-            <td>Project Ongoing? <a href="submitStatusChange.php?id='.$row["id"].'&type=1" class="btn btn-default">Yes</a></td>';
+            <td><a href="submitStatusChange.php?id='.$row["id"].'&type=1" class="btn btn-default">Is Project Ongoing? </a></td>';
     }elseif($type==2){
         $content .='<td>Ongoing Project</td>
-            <td>Project Completed? <a href="submitStatusChange.php?id='.$row["id"].'&type=2" class="btn btn-default">Yes</a></td>';
+            <td> <a href="submitStatusChange.php?id='.$row["id"].'&type=2" class="btn btn-default">Is Project Completed?</a></td>';
     }
     elseif($type==3){
         $content .='<td>Completed Project</td>';
