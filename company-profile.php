@@ -3,7 +3,7 @@ $content = '
 
       <div class="content-left">
         <h3>Company Profile</h3>
-        <div class="content-details">
+        <div class="content-details" style="text-align:justify">
           <div id="scrollbar2">
 
               <div class="scrollbar" style="height: 310px;"><div class="track" style="height: 310px;"><div class="thumb" style="top: 0px; height: 101.371px;"><div class="end"></div></div></div></div>

@@ -371,7 +371,8 @@ h2 {
 body{
     font-size: 14px;
     font-family: calibri;
-	margin-bottom:50px;
+	color:#555;
+    margin-bottom:50px;
 }
 </style>
 <link rel="stylesheet" id="theme-stile-css" href="./src/style(1).css" type="text/css" media="all">
